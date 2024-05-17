@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../static/img/image1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Text {
+    position: absolute;
+    font-size: large;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.Text h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+
+.submit-button{
+    width: 50% !important;
+}
+
+.chat-container {
+    width: 40%;
+    border: 1px solid #0f0000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(47 150 148 / 36%);
+    display: flex;
+    border-bottom: 1px solid #0f0101;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto !important;
+}
+.input-feild {
+    background-color: transparent;
+    width: 90%;
+    height: 40px;
+    border-color: aqua;
+    padding: 10px;
+}
+
+#chatbox {
+    background-color: rgb(4, 17, 30);
+    height: 350px;
+    border-bottom: 1px solid #0f0101;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: auto
+}
+
+.user-message, .bot-message {
+    margin: 10px 0;
+}
+
+.user-message {
+    background: linear-gradient(0deg, #A47CF3, #683FEA);
+    text-align: right;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    background-color: rgb(23, 27, 45);
+    text-align: left;
+    color: rgb(243, 226, 226);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn {
+    border: none;
+    width: 15em;
+    height: 3em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1C1A1C;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    margin-top: 10px;
+  }
+  
+  .sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+  }
+  
+  .text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(0deg,#A47CF3,#683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+  }
+  
+  .btn:hover .text {
+    color: white;
+  }
+  
+  .btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+  } 
